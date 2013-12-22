@@ -55,7 +55,7 @@ listen: {
 * `port`: intger : Port of TCP server.
 * `dirs`: array of string : Paths of directories you want to listen.
 * `options`: object (`{}`) : Options passed to Listen gem. See below for more details.
-* `listener `: function or object : Listener called when files change.
+* `listener `: function or object : Listeners called when files change. See below.
 
 
 ### Options passed to Listen gem
@@ -65,11 +65,11 @@ Listen gem accepts some options. All options you set in your Gruntfile will pass
 Note that you have to write patterns of RegExp as string instead of literal because of incompatibility of one between JavaScript and Ruby. And `\` must be `\\`.
 
 
-### Listener
+### Listeners
 
 You can get two ways below. In every way, you can return names of grunt-task that want to run next.
 
-If `listener` is function, it'll be always called with  informations of files as arguments when files change.
+If `listener` is function, it'll be always called with informations of files as arguments when files change.
 
 `added`, `modified`, `removed` are arrays of paths of changed files or empty arrays if nothing changed.
 
@@ -82,7 +82,7 @@ listener: function (added, modified, removed) {
 }
 ```
 
-If `listener` is object, it's dealed as listeners for matched files with patterns like below. You can write patterns of RegExp as key. If defined an empty string as key, it matches all files except patterns already defined. Note that if you set options like only or ignore, it has a priority to these settings.
+If `listener` is object, it's dealed as listeners for matched files with patterns like below. You can write patterns of RegExp as key. If defined an empty string `''` as key, it matches all files except patterns already defined. Note that if you set options like `only` or `ignore`, it has a priority to these settings.
 
 `status` is string of `added`, `modified` or `removed`.
 
