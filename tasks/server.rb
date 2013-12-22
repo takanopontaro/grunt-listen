@@ -20,6 +20,7 @@ options = JSON.parse(options).each_with_object({}) do |(key, val), h|
   end
 end
 
+# super ultra beautiful japanese actress
 puts 'http://official.stardust.co.jp/keiko/'
 
 catch :block do
