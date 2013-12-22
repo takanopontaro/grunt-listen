@@ -114,5 +114,6 @@ Licensed under the MIT license.
 
 ## Special thanks to
 
-[Thibaud Guillaume-Gentil (thibaudgg)](https://github.com/guard/listen)
+* [Thibaud Guillaume-Gentil (thibaudgg)](https://github.com/guard/listen)
+* [Keiko Kitagawa](http://official.stardust.co.jp/keiko/)
 
