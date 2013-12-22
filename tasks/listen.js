@@ -28,7 +28,7 @@ module.exports = function (grunt) {
     if (data.bundler) {
       params = isWin ?
         {cmd: ruby, args: [winBundler, 'exec', ruby].concat(args), opts: opts} :
-        {cmd: 'bundle', args: ['exec', 'ruby'].concat(args), opts: opts};
+        {cmd: 'bundle', args: ['exec', ruby].concat(args), opts: opts};
     }
     else {
       params = {cmd: ruby, args: args, opts: opts};
