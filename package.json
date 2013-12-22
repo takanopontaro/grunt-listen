@@ -1,0 +1,16 @@
+{
+  "name": "grunt-listen",
+  "version": "0.0.1",
+  "description": "Bridge between grunt and Listen gem.",
+  "keywords": [
+    "node",
+    "watch",
+    "listen",
+    "ruby",
+    "socket",
+    "tcp",
+    "gruntplugin"
+  ],
+  "author": "takanopontaro",
+  "license": "MIT"
+}
