@@ -16,14 +16,14 @@ If you don't install Ruby yet, get it at first. Ruby-2.0 recommended absolutely.
 
 Install Listen gem. I recommend to use [Bundler](http://bundler.io). Get Gemfile from this repository and just type `bundle`.
 
-If you are on Windows, need to install [wdm gem](https://github.com/Maher4Ever/wdm) too. It's a little messy. Install [Devkit](http://rubyinstaller.org/downloads/) under [this instruction](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit) and type `bundle`.
+If you are on Windows, need to install [wdm gem](https://github.com/Maher4Ever/wdm) too. It's a little messy. Install [DevKit](http://rubyinstaller.org/downloads/) under [this instruction](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit) and type `bundle`.
 
 Create your Gruntfile and run Grunt.
 
 
 ## Gruntfile
 
-Here is basic Gruntfile.
+Here is a basic Gruntfile.
 
 ```ruby
 listen: {
@@ -48,11 +48,11 @@ listen: {
 
 ### Available parameters
 
-\* `name`: `type` `(default value if omissible)` : description
+`name`: type (`default value if omissible`) : description
 
 * `bundler`: boolean (`false`) : Use Bundler. Location of Gemfile is same as your Gruntfile.
 * `host`: string (`127.0.0.1`) : Host of TCP server.
-* `port`: intger : Port of TCP server.
+* `port`: integer : Port of TCP server.
 * `dirs`: array of string : Paths of directories you want to listen.
 * `options`: object (`{}`) : Options passed to Listen gem. See below for more details.
 * `listener `: function or object : Listeners called when files change. See below.
