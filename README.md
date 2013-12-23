@@ -18,6 +18,12 @@ Install Listen gem. I recommend to use [Bundler](http://bundler.io). Get Gemfile
 
 If you are on Windows, need to install [wdm gem](https://github.com/Maher4Ever/wdm) too. It's a little messy. Install [DevKit](http://rubyinstaller.org/downloads/) under [this instruction](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit) and type `bundle`.
 
+Install this plugin.
+
+```shell
+npm install grunt-listen --save-dev
+```
+
 Create your Gruntfile and run Grunt.
 
 
