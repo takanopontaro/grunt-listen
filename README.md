@@ -1,6 +1,6 @@
 # grunt-listen
 
-Yet another watcher. Bridge between grunt and [Listen gem](https://github.com/guard/listen).
+Yet another watcher. Bridge between Grunt and [Listen gem](https://github.com/guard/listen).
 
 
 ## Why Listen gem?
